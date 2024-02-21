@@ -36,6 +36,17 @@
               "description": "The last name"
             },
             {
+              "kind": "field",
+              "name": "size",
+              "type": {
+                "text": "InternalSize"
+              },
+              "description": "Size",
+              "expandedType": {
+                "text": "'s' | 'm' | 'l'"
+              }
+            },
+            {
               "kind": "method",
               "name": "getText",
               "privacy": "private",
@@ -70,6 +81,16 @@
               "fieldName": "last",
               "type": {
                 "text": "string"
+              }
+            },
+            {
+              "name": "size",
+              "fieldName": "size",
+              "type": {
+                "text": "InternalSize"
+              },
+              "expandedType": {
+                "text": "'s' | 'm' | 'l'"
               }
             }
           ],

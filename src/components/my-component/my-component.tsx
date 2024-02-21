@@ -1,5 +1,6 @@
 import { Component, Prop, h } from '@stencil/core';
 import { format } from '../../utils/utils';
+import { ImportedSize } from '../../types/size';
 
 export type InternalSize = 's' | 'm' | 'l';
 
@@ -27,7 +28,7 @@ export class MyComponent {
   /**
    * Size
    */
-  @Prop() size: InternalSize;
+  @Prop() size: ImportedSize;
 
   private getText(): string {
     return format(this.first, this.middle, this.last);

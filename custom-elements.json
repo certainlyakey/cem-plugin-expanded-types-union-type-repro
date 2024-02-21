@@ -39,12 +39,9 @@
               "kind": "field",
               "name": "size",
               "type": {
-                "text": "InternalSize"
+                "text": "ImportedSize"
               },
-              "description": "Size",
-              "expandedType": {
-                "text": "'s' | 'm' | 'l'"
-              }
+              "description": "Size"
             },
             {
               "kind": "method",
@@ -87,10 +84,7 @@
               "name": "size",
               "fieldName": "size",
               "type": {
-                "text": "InternalSize"
-              },
-              "expandedType": {
-                "text": "'s' | 'm' | 'l'"
+                "text": "ImportedSize"
               }
             }
           ],

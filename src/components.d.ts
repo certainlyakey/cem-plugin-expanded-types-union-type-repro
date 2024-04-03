@@ -24,7 +24,7 @@ export namespace Components {
         /**
           * Size
          */
-        "size": Exclude<ImportedSize, 'lg'>;
+        "size": Omit<ImportedSize, 'l'>;
     }
 }
 declare global {
@@ -55,7 +55,7 @@ declare namespace LocalJSX {
         /**
           * Size
          */
-        "size"?: Exclude<ImportedSize, 'lg'>;
+        "size"?: Omit<ImportedSize, 'l'>;
     }
     interface IntrinsicElements {
         "my-component": MyComponent;

@@ -28,7 +28,7 @@ export class MyComponent {
   /**
    * Size
    */
-  @Prop() size: Exclude<ImportedSize, 'lg'>;
+  @Prop() size: Omit<ImportedSize, 'l'>;
 
   private getText(): string {
     return format(this.first, this.middle, this.last);

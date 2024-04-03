@@ -5,6 +5,8 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { ImportedSize } from "./types/size";
+export { ImportedSize } from "./types/size";
 export namespace Components {
     interface MyComponent {
         /**
@@ -19,6 +21,10 @@ export namespace Components {
           * The middle name
          */
         "middle": string;
+        /**
+          * Size
+         */
+        "size": Exclude<ImportedSize, 'lg'>;
     }
 }
 declare global {
@@ -46,6 +52,10 @@ declare namespace LocalJSX {
           * The middle name
          */
         "middle"?: string;
+        /**
+          * Size
+         */
+        "size"?: Exclude<ImportedSize, 'lg'>;
     }
     interface IntrinsicElements {
         "my-component": MyComponent;

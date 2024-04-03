@@ -39,7 +39,7 @@
               "kind": "field",
               "name": "size",
               "type": {
-                "text": "ImportedSize"
+                "text": "Exclude<ImportedSize, 'lg'>"
               },
               "description": "Size"
             },
@@ -84,7 +84,7 @@
               "name": "size",
               "fieldName": "size",
               "type": {
-                "text": "ImportedSize"
+                "text": "Exclude<ImportedSize, 'lg'>"
               }
             }
           ],
